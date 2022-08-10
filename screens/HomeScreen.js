@@ -2,7 +2,7 @@ import { View, Text, SafeAreaView, Image, TextInput, ScrollView } from "react-na
 import React, { useLayoutEffect } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { ChevronDownIcon, UserIcon,AdjustmentsIconj, AdjustmentsIcon, SearchIcon } from "react-native-heroicons/outline";
-import Categories from "../components/categories";
+import Categories from "../components/Categories";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
@@ -40,7 +40,7 @@ const HomeScreen = () => {
         <AdjustmentsIcon color="#00ccbb" />
       </View>
 
-      <ScrollView className="bg-gray-100">
+      <ScrollView className="bg-gray-100" contentContainerStyle={{paddingBottom: 100}}>
         {/* categories */}
         <Categories /> 
 
